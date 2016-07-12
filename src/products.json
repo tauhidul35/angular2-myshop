@@ -1,145 +1,145 @@
 [
-      {
-            "id": 1,
-            "firstName": "ted",
-            "lastName": "james",
-            "gender": "male",
-            "address": "1234 Anywhere St.",
-            "city": " Phoenix ",
-            "state": {
-                "abbreviation": "AZ",
-                "name": "Arizona"
-            },
-            "orderTotal": 40.99
-      },
-      {
-            "id": 2,
-            "firstName": "Michelle",
-            "lastName": "Thompson",
-            "gender": "female",
-            "address": "345 Cedar Point Ave.",
-            "city": "Los Angeles ",
-            "state": {
-                "abbreviation": "CA",
-                "name": "California"
-            },
-            "orderTotal": 89.99
-      },
-      {
-            "id": 3,
-            "firstName": "Zed",
-            "lastName": "Bishop",
-            "gender": "male",
-            "address": "1822 Long Bay Dr.",
-            "city": " Las Vegas ",
-            "state": {
-                "abbreviation": "NV",
-                "name": "Nevada"
-            },
-            "orderTotal": 29.99
-      },
-      {
-            "id": 4,
-            "firstName": "Tina",
-            "lastName": "Adams",
-            "gender": "female",
-            "address": "79455 Pinetop Way",
-            "city": "Seattle",
-            "state": {
-                "abbreviation": "WA",
-                "name": " Washington "
-            },
-            "orderTotal": 15.99
-      },
-      {
-            "id": 5,
-            "firstName": "Igor",
-            "lastName": "Minar",
-            "gender": "male",
-            "address": "576 Crescent Blvd.",
-            "city": " Chandler",
-            "state": {
-                "abbreviation": "AZ",
-                "name": "Arizona"
-            },
-            "orderTotal": 29.99
-      },
-      {
-            "id": 6,
-            "firstName": "Brad",
-            "lastName": "Green",
-            "gender": "male",
-            "address": "9874 Center St.",
-            "city": "Mountain View ",
-            "state": {
-                "abbreviation": "CA",
-                "name": "California"
-            },
-            "orderTotal": 49.99
-      },
-      {
-            "id": 7,
-            "firstName": "Misko",
-            "lastName": "Hevery",
-            "gender": "male",
-            "address": "9812 Builtway Appt #1",
-            "city": "Mountain View ",
-            "state": {
-                "abbreviation": "CA",
-                "name": "California"
-            },
-            "orderTotal": 19.99
-      },
-      {
-            "id": 8,
-            "firstName": "Heedy",
-            "lastName": "Wahlin",
-            "gender": "female",
-            "address": "4651 Tuvo St.",
-            "city": "Chandler",
-            "state": {
-                "abbreviation": "AZ",
-                "name": "Arizona"
-            },
-            "orderTotal": 9.99
-      },
-      {
-            "id": 9,
-            "firstName": "John",
-            "lastName": "Papa",
-            "gender": "male",
-            "address": "66 Ray St.",
-            "city": " Orlando",
-            "state": {
-                "abbreviation": "FL",
-                "name": "Florida"
-            },
-            "orderTotal": 149.99
-      },
-      {
-            "id": 10,
-            "firstName": "Tonya",
-            "lastName": "Smith",
-            "gender": "female",
-            "address": "1455 Chandler Blvd.",
-            "city": " Atlanta",
-            "state": {
-                "abbreviation": "GA",
-                "name": "Georgia"
-            },
-            "orderTotal": 299.99
-      },
-      {
-            "id": 11,
-            "firstName": "ward",
-            "lastName": "bell",
-            "gender": "male",
-            "address": "888 Central St.",
-            "city": "San Francisco",
-            "state": {
-                "abbreviation": "CA",
-                "name": "California"
-            },
-            "orderTotal": 29.98
-      }
+  {
+    "id": 1,
+    "name": "ANCHOVIES",
+    "price": 10.00,
+    "image": "anchovies.png",
+    "address": "1234 Anywhere St.",
+    "city": " Phoenix ",
+    "state": {
+      "abbreviation": "AZ",
+      "name": "Arizona"
+    },
+    "orderTotal": 40.99
+  },
+  {
+    "id": 2,
+    "name": "MARINATED SEAFOOD SALAD",
+    "price": 12.50,
+    "image": "seafood-salad.jpg",
+    "address": "345 Cedar Point Ave.",
+    "city": "Los Angeles ",
+    "state": {
+      "abbreviation": "CA",
+      "name": "California"
+    },
+    "orderTotal": 89.99
+  },
+  {
+    "id": 3,
+    "name": "GIN/TONIC CURED SALMON",
+    "price": 10.00,
+    "image": "salmon.jpg",
+    "address": "1822 Long Bay Dr.",
+    "city": " Las Vegas ",
+    "state": {
+      "abbreviation": "NV",
+      "name": "Nevada"
+    },
+    "orderTotal": 29.99
+  },
+  {
+    "id": 4,
+    "name": "CHAMOMILE TEA",
+    "price": 15.00,
+    "image": "chamomile-tea.jpg",
+    "address": "79455 Pinetop Way",
+    "city": "Seattle",
+    "state": {
+      "abbreviation": "WA",
+      "name": " Washington "
+    },
+    "orderTotal": 15.99
+  },
+  {
+    "id": 5,
+    "name": "HIBISCUS TEA",
+    "price": 8.20,
+    "image": "hibiscus-tea.jpg",
+    "address": "576 Crescent Blvd.",
+    "city": " Chandler",
+    "state": {
+      "abbreviation": "AZ",
+      "name": "Arizona"
+    },
+    "orderTotal": 29.99
+  },
+  {
+    "id": 6,
+    "name": "PASTA SEASONING",
+    "price": 7.75,
+    "image": "pasta-seasoning.jpg",
+    "address": "9874 Center St.",
+    "city": "Mountain View ",
+    "state": {
+      "abbreviation": "CA",
+      "name": "California"
+    },
+    "orderTotal": 49.99
+  },
+  {
+    "id": 7,
+    "name": "CAYENNE SWITCHEL",
+    "price": 9.00,
+    "image": "cayenne-switchel.jpg",
+    "address": "9812 Builtway Appt #1",
+    "city": "Mountain View ",
+    "state": {
+      "abbreviation": "CA",
+      "name": "California"
+    },
+    "orderTotal": 19.99
+  },
+  {
+    "id": 8,
+    "name": "ROYAL KETA CAVIAR",
+    "price": 11.50,
+    "image": "keta-caviar.jpg",
+    "address": "4651 Tuvo St.",
+    "city": "Chandler",
+    "state": {
+      "abbreviation": "AZ",
+      "name": "Arizona"
+    },
+    "orderTotal": 9.99
+  },
+  {
+    "id": 9,
+    "name": "FRENCH MACARONS",
+    "price": 10.00,
+    "image": "french-macarons.jpg",
+    "address": "66 Ray St.",
+    "city": " Orlando",
+    "state": {
+      "abbreviation": "FL",
+      "name": "Florida"
+    },
+    "orderTotal": 149.99
+  },
+  {
+    "id": 10,
+    "name": "COFFEEBARS",
+    "price": 8.50,
+    "image": "coffeebars.jpg",
+    "address": "1455 Chandler Blvd.",
+    "city": " Atlanta",
+    "state": {
+      "abbreviation": "GA",
+      "name": "Georgia"
+    },
+    "orderTotal": 299.99
+  },
+  {
+    "id": 11,
+    "name": "CHOCOLATE MACARONS",
+    "price": 12.00,
+    "image": "chocolate-macarons.jpg",
+    "address": "888 Central St.",
+    "city": "San Francisco",
+    "state": {
+      "abbreviation": "CA",
+      "name": "California"
+    },
+    "orderTotal": 29.98
+  }
 ]

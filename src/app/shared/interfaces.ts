@@ -1,8 +1,8 @@
 export interface IProduct {
   id: number;
-  firstName: string;
-  lastName: string;
-  gender: string;
+  name: string;
+  price: number;
+  image: string;
   address: string;
   city: string;
   state: IState;
@@ -21,6 +21,7 @@ export interface IOrder {
 
 export interface IOrderItem {
   id: number;
-  productName: string;
+  customerName: string;
+  quantity: number;
   itemCost: number;
 }

@@ -1,12 +1,13 @@
 <div *ngIf="product">
   <div class="row">
-    <div class="col-md-1">
-      <img src="images/{{product.gender | lowercase}}.png" class="card-image" />
+    <div class="pull-left">
+      <img src="images/products/{{product.image}}" class="card-image" />
     </div>
-    <div class="col-md-11">
+    <div class="col-md-9">
       <h4>    
-          {{ product.firstName | capitalize }} {{ product.lastName | capitalize }}&nbsp;          
+          {{ product.name | capitalize }}
       </h4>
+      Price: ${{ product.price }}
       <br />
       {{ product.address }}
       <br />

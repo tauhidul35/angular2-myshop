@@ -6,8 +6,8 @@
           <thead>
           <tr>
             <th>&nbsp;</th>
-            <th sort-by="firstName" (sorted)="sort($event)">First Name</th>
-            <th sort-by="lastName" (sorted)="sort($event)">Last Name</th>
+            <th sort-by="name" (sorted)="sort($event)">Name</th>
+            <th sort-by="price" (sorted)="sort($event)">Price</th>
             <th sort-by="address" (sorted)="sort($event)">Address</th>
             <th sort-by="city" (sorted)="sort($event)">City</th>
             <th sort-by="state.name" (sorted)="sort($event)">State</th>
@@ -18,10 +18,10 @@
           </thead>
           <tbody>
           <tr *ngFor="let product of products;trackBy:trackby.product">
-            <td><img src="images/{{ product.gender | lowercase }}.png"
+            <td><img src="images/products/{{ product.image }}"
                      class="card-image" alt="Product Image"/></td>
-            <td><a [routerLink]="['/products',product.id,'details']">{{ product.firstName | capitalize }}</a></td>
-            <td>{{ product.lastName | capitalize }}</td>
+            <td><a [routerLink]="['/products',product.id,'details']">{{ product.name | capitalize }}</a></td>
+            <td>${{ product.price }}</td>
             <td>{{ product.address }}</td>
             <td>{{ product.city | trim }}</td>
             <td>{{ product.state.name }}</td>

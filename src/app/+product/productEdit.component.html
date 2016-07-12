@@ -1,15 +1,15 @@
-<!-- Things like #firstName="ngForm" will change to #firstName="ngModel" after RC2 -->
+<!-- Things like #name="ngForm" will change to #name="ngModel" after RC2 -->
 <div>
   <form (ngSubmit)="onSubmit()" #productForm="ngForm" class="editForm">
     <div class="form-group">
       <label>Name</label>
-      <input type="text" class="form-control" name="firstName" [(ngModel)]="product.firstName" #firstName="ngModel" required>
-      <div class="alert alert-danger" [hidden]="firstName.valid">First Name is required</div>
+      <input type="text" class="form-control" name="name" [(ngModel)]="product.name" #name="ngModel" required>
+      <div class="alert alert-danger" [hidden]="name.valid">Name is required</div>
     </div>
     <div class="form-group">
-      <label>Last Name</label>
-      <input type="text" class="form-control" name="lastName" [(ngModel)]="product.lastName" #lastName="ngModel" required>
-      <div class="alert alert-danger" [hidden]="lastName.valid">Last Name is required</div>
+      <label>Price</label>
+      <input type="text" class="form-control" name="price" [(ngModel)]="product.price" #price="ngModel" required>
+      <div class="alert alert-danger" [hidden]="price.valid">Price is required</div>
     </div>
     <div class="form-group">
       <label>Address</label>

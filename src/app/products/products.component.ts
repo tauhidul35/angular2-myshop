@@ -44,7 +44,7 @@ export class ProductsComponent implements OnInit {
   filterChanged(data: string) {
     if (data && this.products) {
       data = data.toUpperCase();
-      let props = ['firstName', 'lastName', 'address', 'city', 'orderTotal'];
+      let props = ['name', 'price', 'address', 'city', 'orderTotal'];
       let filtered = this.products.filter(item => {
         let match = false;
         for (let prop of props) {

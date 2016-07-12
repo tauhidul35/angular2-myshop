@@ -2,73 +2,73 @@
   {
     "productId": 1,
     "orderItems": [
-      {"id": 1, "productName": "Baseball", "itemCost": 9.99},
-      {"id": 2, "productName": "Bat", "itemCost": 19.99}
+      {"id": 1, "customerName": "Milon", "quantity": 1, "itemCost": 10.00},
+      {"id": 2, "customerName": "Asraful Hasan", "quantity": 2, "itemCost": 20.00}
     ]
   },
   {
     "productId": 2,
     "orderItems": [
-      {"id": 3, "productName": "Basketball", "itemCost": 7.99},
-      {"id": 4, "productName": "Shoes", "itemCost": 199.99}
+      {"id": 3, "customerName": "Asraful Hasan", "quantity": 1, "itemCost": 12.00},
+      {"id": 4, "customerName": "Hasanuzzaman", "quantity": 3, "itemCost": 36.00}
     ]
   },
   {
     "productId": 3,
     "orderItems": [
-      {"id": 5, "productName": "Frisbee", "itemCost": 2.99},
-      {"id": 6, "productName": "Hat", "itemCost": 5.99}
+      {"id": 5, "customerName": "Kabir Talukder", "quantity": 1, "itemCost": 8.50},
+      {"id": 6, "customerName": "Habibur Rahman", "quantity": 1, "itemCost": 8.50}
     ]
   },
   {
     "productId": 4,
     "orderItems": [
-      {"id": 7, "productName": "Boomerang", "itemCost": 29.99},
-      {"id": 8, "productName": "Helmet", "itemCost": 19.99},
-      {"id": 9, "productName": "Kangaroo Saddle", "itemCost": 179.99}
+      {"id": 7, "customerName": "Basir Ali", "quantity": 1, "itemCost": 7.75},
+      {"id": 8, "customerName": "Sumona Hasan", "quantity": 2, "itemCost": 15.50},
+      {"id": 9, "customerName": "Lipi Halder", "quantity": 1, "itemCost": 7.75}
     ]
   },
   {
     "productId": 5,
     "orderItems": [
-      {"id": 10, "productName": "Budgie Smugglers", "itemCost": 19.99},
-      {"id": 11, "productName": "Swimming Cap", "itemCost": 5.49}
+      {"id": 10, "customerName": "Habibur Rahman", "quantity": 1, "itemCost": 10.00},
+      {"id": 11, "customerName": "Sarmila Akter", "quantity": 1, "itemCost": 10.00}
     ]
   },
   {
     "productId": 6,
     "orderItems": [
-      {"id": 12, "productName": "Bow", "itemCost": 399.99},
-      {"id": 13, "productName": "Arrows", "itemCost": 69.99}
+      {"id": 12, "customerName": "Hasina Houlader", "quantity": 5, "itemCost": 50.00},
+      {"id": 13, "customerName": "Kotha Islam", "quantity": 2, "itemCost": 20.00}
     ]
   },
   {
     "productId": 7,
     "orderItems": [
-      {"id": 14, "productName": "Baseball", "itemCost": 9.99},
-      {"id": 15, "productName": "Bat", "itemCost": 19.99}
+      {"id": 14, "customerName": "Humayan Kabir", "quantity": 2, "itemCost": 15.00},
+      {"id": 15, "customerName": "Hayat Ali", "quantity": 1, "itemCost": 7.50}
     ]
   },
   {
     "productId": 8,
     "orderItems": [
-      {"id": 16, "productName": "Surfboard", "itemCost": 299.99},
-      {"id": 17, "productName": "Wax", "itemCost": 5.99},
-      {"id": 18, "productName": "Shark Repellent", "itemCost": 15.99}
+      {"id": 16, "customerName": "Hasina Houlader", "quantity": 1, "itemCost": 12.50},
+      {"id": 17, "customerName": "Sarmila Akter", "quantity": 2, "itemCost": 25.00},
+      {"id": 18, "customerName": "Hayat Ali", "quantity": 1, "itemCost": 12.50}
     ]
   },
   {
     "productId": 9,
     "orderItems": [
-      {"id": 19, "productName": "Saddle", "itemCost": 599.99},
-      {"id": 20, "productName": "Riding cap", "itemCost": 79.99}
+      {"id": 19, "customerName": "Basir Ali", "quantity": 3, "itemCost": 30.00},
+      {"id": 20, "customerName": "Habibur Rahman", "quantity": 1, "itemCost": 10.00}
     ]
   },
   {
     "productId": 10,
     "orderItems": [
-      {"id": 21, "productName": "Baseball", "itemCost": 9.99},
-      {"id": 22, "productName": "Bat", "itemCost": 19.99}
+      {"id": 21, "customerName": "Lipi Halder", "quantity": 1, "itemCost": 12.00},
+      {"id": 22, "customerName": "Hayat Ali", "quantity": 2, "itemCost": 24.00}
     ]
   }
 ]

@@ -14,9 +14,9 @@ export class ProductEditComponent implements OnInit {
   product: IProduct = 
   {
     id: 0,
-    firstName: '',
-    lastName: '',
-    gender: '',
+    name: '',
+    price: 0,
+    image: '',
     address: '',
     city: '',
     state: {

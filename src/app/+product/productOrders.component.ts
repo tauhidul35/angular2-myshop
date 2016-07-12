@@ -11,8 +11,8 @@ import { CapitalizePipe } from '../shared/pipes/capitalize.pipe';
   templateUrl: 'productOrders.component.html',
   pipes: [ CapitalizePipe ]
 })
-export class ProductOrdersComponent implements OnInit {
 
+export class ProductOrdersComponent implements OnInit {
   filteredOrders: IOrder[] = [];
   product: IProduct;
 
