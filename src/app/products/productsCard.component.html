@@ -1,0 +1,33 @@
+<div class="container">
+  <div class="row card-container">
+    <div class="col-sm-6 col-md-4 col-lg-3" *ngFor="let product of products;trackBy:trackby.product">
+      <div class="card">
+        <div class="card-header">
+          <a [routerLink]="['/products',product.id,'details']" class="white">
+            {{product.firstName | capitalize }} {{ product.lastName | capitalize }}
+          </a>
+          <a [routerLink]="['/products',product.id,'edit']">
+            <i title="Edit"
+               class="pull-right glyphicon glyphicon-edit edit-icon white"></i>
+          </a>
+        </div>
+        <div class="card-body">
+          <div class="clearfix">
+            <div class="pull-left card-body-left">
+              <a href="#" class="white">
+                <img src="images/{{product.gender | lowercase}}.png" class="card-image"/>
+              </a>
+            </div>
+            <div class="pull-left card-body-right">
+              <div class="card-body-content">{{product.city | trim }}, {{product.state.name}}</div>
+              <a [routerLink]="['/products',product.id,'orders']">View Orders</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div *ngIf="!products.length">
+      No Records Found
+    </div>
+  </div>
+</div>

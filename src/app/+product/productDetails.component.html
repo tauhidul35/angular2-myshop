@@ -1,0 +1,19 @@
+<div *ngIf="product">
+  <div class="row">
+    <div class="col-md-1">
+      <img src="images/{{product.gender | lowercase}}.png" class="card-image" />
+    </div>
+    <div class="col-md-11">
+      <h4>    
+          {{ product.firstName | capitalize }} {{ product.lastName | capitalize }}&nbsp;          
+      </h4>
+      <br />
+      {{ product.address }}
+      <br />
+      {{ product.city }}, {{ product.state.name }}
+    </div>
+  </div>    
+</div>   
+<div *ngIf="!product" class="row">
+   No product found
+</div>

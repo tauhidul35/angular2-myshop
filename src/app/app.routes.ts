@@ -1,11 +1,11 @@
 import { provideRouter, RouterConfig } from '@angular/router';
 
-import { CustomersRoutes } from './customers/customers.routes';
-import { CustomerRoutes } from './+customer/customer.routes';
+import { ProductsRoutes } from './products/products.routes';
+import { ProductRoutes } from './+product/product.routes';
 
 export const App_Routes: RouterConfig = [
-  ...CustomersRoutes,
-  ...CustomerRoutes
+  ...ProductsRoutes,
+  ...ProductRoutes
 ];
 
 export const APP_ROUTER_PROVIDERS = [

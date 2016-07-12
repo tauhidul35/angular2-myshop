@@ -7,29 +7,26 @@ import { TrimPipe } from '../shared/pipes/trim.pipe';
 import { Sorter } from '../shared/utils/sorter';
 import { TrackByService } from '../shared/services/trackby.service';
 
-@Component({ 
+@Component({
   moduleId: module.id,
-  selector: 'customers-grid', 
-  templateUrl: 'customersGrid.component.html',
+  selector: 'products-grid',
+  templateUrl: 'productsGrid.component.html',
   directives: [ROUTER_DIRECTIVES, SortByDirective],
   pipes: [CapitalizePipe, TrimPipe],
   //When using OnPush detectors, then the framework will check an OnPush 
   //component when any of its input properties changes, when it fires 
   //an event, or when an observable fires an event ~ Victor Savkin (Angular Team)
-  changeDetection: ChangeDetectionStrategy.OnPush 
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class CustomersGridComponent implements OnInit {
 
-  @Input() customers: any[] = [];
+export class ProductsGridComponent implements OnInit {
+  @Input() products: any[] = [];
 
   constructor(private sorter: Sorter, public trackby: TrackByService) { }
-   
-  ngOnInit() {
 
-  }
+  ngOnInit() {}
 
   sort(prop: string) {
-      this.sorter.sort(this.customers, prop);
+    this.sorter.sort(this.products, prop);
   }
-
 }

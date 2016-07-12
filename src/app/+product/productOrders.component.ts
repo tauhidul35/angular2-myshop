@@ -2,19 +2,19 @@ import { Component, OnInit } from '@angular/core';
 import { Router, ActivatedRoute } from '@angular/router';
 
 import { DataService } from '../shared/services/data.service';
-import { ICustomer, IOrder, IOrderItem } from '../shared/interfaces';
+import { IProduct, IOrder, IOrderItem } from '../shared/interfaces';
 import { CapitalizePipe } from '../shared/pipes/capitalize.pipe';
 
 @Component({
   moduleId: module.id,
-  selector: 'customer-orders',
-  templateUrl: 'customerOrders.component.html',
+  selector: 'product-orders',
+  templateUrl: 'productOrders.component.html',
   pipes: [ CapitalizePipe ]
 })
-export class CustomerOrdersComponent implements OnInit {
+export class ProductOrdersComponent implements OnInit {
 
   filteredOrders: IOrder[] = [];
-  customer: ICustomer;
+  product: IProduct;
 
   constructor(private router: Router, private route: ActivatedRoute, private dataService: DataService) { }
 
@@ -23,8 +23,8 @@ export class CustomerOrdersComponent implements OnInit {
     this.dataService.getOrders(id).subscribe((orders: IOrder[]) => {
       this.filteredOrders = orders;
     });
-    this.dataService.getCustomer(id).subscribe((customer: ICustomer) => {
-      this.customer = customer;
+    this.dataService.getProduct(id).subscribe((product: IProduct) => {
+      this.product = product;
     });
   }
   

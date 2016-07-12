@@ -1,0 +1,40 @@
+<div class="container">
+  <div class="row grid-container">
+    <div class="col-md-10">
+      <div class="table">
+        <table class="table table-striped table-hover">
+          <thead>
+          <tr>
+            <th>&nbsp;</th>
+            <th sort-by="firstName" (sorted)="sort($event)">First Name</th>
+            <th sort-by="lastName" (sorted)="sort($event)">Last Name</th>
+            <th sort-by="address" (sorted)="sort($event)">Address</th>
+            <th sort-by="city" (sorted)="sort($event)">City</th>
+            <th sort-by="state.name" (sorted)="sort($event)">State</th>
+            <!-- Or you can do this directly rather than using sort-by directive -->
+            <th (click)="sort('orderTotal')">Order Total</th>
+            <th>&nbsp;</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr *ngFor="let product of products;trackBy:trackby.product">
+            <td><img src="images/{{ product.gender | lowercase }}.png"
+                     class="card-image" alt="Product Image"/></td>
+            <td><a [routerLink]="['/products',product.id,'details']">{{ product.firstName | capitalize }}</a></td>
+            <td>{{ product.lastName | capitalize }}</td>
+            <td>{{ product.address }}</td>
+            <td>{{ product.city | trim }}</td>
+            <td>{{ product.state.name }}</td>
+            <td>{{ product.orderTotal | currency:'USD':true }}</td>
+            <td><a [routerLink]="['/products',product.id,'orders']">View Orders</a></td>
+          </tr>
+          <tr *ngIf="!products.length">
+            <td>&nbsp;</td>
+            <td colspan="6">No Records Found</td>
+          </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>

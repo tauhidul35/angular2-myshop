@@ -4,36 +4,36 @@ import { ROUTER_DIRECTIVES } from '@angular/router';
 
 import { DataService } from '../shared/services/data.service';
 import { FilterTextboxComponent } from '../filterTextbox/filterTextbox.component';
-import { CustomersCardComponent } from './customersCard.component';
-import { CustomersGridComponent } from './customersGrid.component'
-import { ICustomer, IOrder } from '../shared/interfaces';
+import { ProductsCardComponent } from './productsCard.component';
+import { ProductsGridComponent } from './productsGrid.component'
+import { IProduct, IOrder } from '../shared/interfaces';
 
 @Component({
   moduleId: module.id,
-  selector: 'customers',
-  templateUrl: 'customers.component.html',
+  selector: 'products',
+  templateUrl: 'products.component.html',
   directives: [ ROUTER_DIRECTIVES, FilterTextboxComponent,
-                CustomersCardComponent, CustomersGridComponent ]
+                ProductsCardComponent, ProductsGridComponent ]
 })
 
-export class CustomersComponent implements OnInit {
+export class ProductsComponent implements OnInit {
   title: string;
   filterText: string;
-  customers: ICustomer[] = [];
-  filteredCustomers: ICustomer[] = [];
+  products: IProduct[] = [];
+  filteredProducts: IProduct[] = [];
   displayMode: DisplayModeEnum;
   displayModeEnum = DisplayModeEnum;
 
   constructor(private dataService: DataService) { }
 
   ngOnInit() {
-    this.title = 'Customers';
-    this.filterText = 'Filter Customers:';
+    this.title = 'Products';
+    this.filterText = 'Filter Products:';
     this.displayMode = DisplayModeEnum.Card;
 
-    this.dataService.getCustomers()
-      .subscribe((customers: ICustomer[]) => {
-        this.customers = this.filteredCustomers = customers;
+    this.dataService.getProducts()
+      .subscribe((products: IProduct[]) => {
+        this.products = this.filteredProducts = products;
       });
   }
 
@@ -42,10 +42,10 @@ export class CustomersComponent implements OnInit {
   }
 
   filterChanged(data: string) {
-    if (data && this.customers) {
+    if (data && this.products) {
       data = data.toUpperCase();
       let props = ['firstName', 'lastName', 'address', 'city', 'orderTotal'];
-      let filtered = this.customers.filter(item => {
+      let filtered = this.products.filter(item => {
         let match = false;
         for (let prop of props) {
           //console.log(item[prop] + ' ' + item[prop].toUpperCase().indexOf(data));
@@ -56,10 +56,10 @@ export class CustomersComponent implements OnInit {
         }
         return match;
       });
-      this.filteredCustomers = filtered;
+      this.filteredProducts = filtered;
     }
     else {
-      this.filteredCustomers = this.customers;
+      this.filteredProducts = this.products;
     }
   }
 }
